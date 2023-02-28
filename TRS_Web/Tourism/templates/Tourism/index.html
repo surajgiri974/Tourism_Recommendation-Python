@@ -50,7 +50,7 @@
          <input type="submit" value="login now" class="btn">
          <input type="checkbox" id="remember">
          <label for="remember">remember me</label>
-         {% include 'messages_block.html' %}
+         {% include 'Tourism/messages_block.html' %}
          <p>forget password? <a href="#">click here</a></p>
 
       </form> <a style="font-size:23px; color:white;" href="{% url 'register_page' %}">register now</a>
@@ -397,7 +397,7 @@ Tokyo is famous for Anime, electronics, manga, and video games. Akihabara is the
             </div>
             <textarea placeholder="Message" name="cmsg" id="" cols="30" rows="10"></textarea>
             <input type="submit" class="btn" value="Send message"><br>
-            <p>{% include 'message_show.html' %}</p>
+            <p>{% include 'Tourism/message_show.html' %}</p>
          </form>
       </div>
 
