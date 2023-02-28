@@ -1,0 +1,465 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Tour Registration</title>
+<style>
+
+#fom
+{
+  border:2px solid black;
+  padding:10px;
+  width:70%;
+  margin-left:15%;
+  border-radius:20px;
+  background-color:white;
+}
+
+#submit
+{
+  padding:7px;
+  width:120px;
+  border-radius:20px;
+  border-width:1px;
+}
+
+#submit:hover
+{
+  padding:10px;
+  font-weight:bold;
+  background-color: ;
+}
+tr,td{
+	padding: 10px;
+ }
+
+ select
+ {
+  font-weight:bold;
+  font-size:14px;
+  border-radius:20px;
+ }
+ #data_23
+ {
+   font-size:14px;
+   font-weight:bold;
+ }
+body
+{
+ background-image:url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+}
+</style>
+</head>
+<body>
+<div id="fom">
+<form method="post" action="" onSubmit="return validateForm();">
+<div style="max-width: 500px;">
+</div>
+	<table>
+		<tr>
+			<th colspan="4">
+				
+				&nbsp;&nbsp;&nbsp;<div style="margin-left:40%;padding-bottom: 1px;font-size : 24px;">Trip Registration</div><br>
+				<div style="margin-left:35%;padding-bottom: 15px;font-size : 18px;">Register for our organization's annual road trip.</div>
+			</th>
+		</tr>
+		<tr>
+			<td><b>First name :<span style="color: red;"> *</span></td>
+			<td><input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/></td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><b>Last name :<span style="color: red;"> *</span></td></b>
+			<td> <input type="text" id="data_4" name="data_4" style="max-width: 100%;" class="form-control"/></td>
+		</tr>
+		<tr>
+			<td><b>Email :<span style="color: red;"> *</span></td></b>
+			<td> <input type="text" id="data_5" name="data_5" style="max-width : 450px;" class="form-control"/></td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><b>Phone :<span style="color: red;"> *</span></td></b>
+			<td> <input type="text" id="data_6" name="data_6" style="max-width : 450px;" class="form-control"/></td>
+		</tr>
+		<tr>
+			<td><b>Gender :<span style="color: red;"> *</span></td></b>
+			<td><select id="data_20" name="data_20" style="max-width : 450px;" class="form-control">
+				<option>Select Gender</option>
+				<option>Male</option>
+				<option>Female</option>
+				</select>
+			</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><b>Country :<span style="color: red;"> *</span></td></b>
+			<td><select id="data_15" name="data_15" style="max-width : 450px;" class="form-control">
+					<option>Select Country</option>
+					<option>Afghanistan</option>
+					<option>Åland Islands</option>
+					<option>Albania</option>
+					<option>Algeria</option>
+					<option>American Samoa</option>
+					<option>Andorra</option>
+					<option>Angola</option>
+					<option>Anguilla</option>
+					<option>Antigua and Barbuda</option>
+					<option>Argentina</option>
+					<option>Armenia</option>
+					<option>Aruba</option>
+					<option>Australia</option>
+					<option>Austria</option>
+					<option>Azerbaijan</option>
+					<option>Bangladesh</option>
+					<option>Barbados</option>
+					<option>Bahamas</option>
+					<option>Bahrain</option>
+					<option>Belarus</option>
+					<option>Belgium</option>
+					<option>Belize</option>
+					<option>Benin</option>
+					<option>Bermuda</option>
+					<option>Bhutan</option>
+					<option>Bolivia</option>
+					<option>Bosnia and Herzegovina</option>
+					<option>Botswana</option>
+					<option>Brazil</option>
+					<option>British Indian Ocean Territory</option>
+					<option>British Virgin Islands</option>
+					<option>Brunei Darussalam</option>
+					<option>Bulgaria</option>
+					<option>Burkina Faso</option>
+					<option>Burma</option>
+					<option>Burundi</option>
+					<option>Cambodia</option>
+					<option>Cameroon</option>
+					<option>Canada</option>
+					<option>Cape Verde</option>
+					<option>Cayman Islands</option>
+					<option>Central African Republic</option>
+					<option>Chad</option>
+					<option>Chile</option>
+					<option>China</option>
+					<option>Christmas Island</option>
+					<option>Cocos (Keeling) Islands</option>
+					<option>Colombia</option>
+					<option>Comoros</option>
+					<option>Congo-Brazzaville</option>
+					<option>Congo-Kinshasa</option>
+					<option>Cook Islands</option>
+					<option>Costa Rica</option>
+					<option>Croatia</option>
+					<option>Curaçao</option>
+					<option>Cyprus</option>
+					<option>Czech Republic</option>
+					<option>Denmark</option>
+					<option>Djibouti</option>
+					<option>Dominica</option>
+					<option>Dominican Republic</option>
+					<option>East Timor</option>
+					<option>Ecuador</option>
+					<option>El Salvador</option>
+					<option>Egypt</option>
+					<option>Equatorial Guinea</option>
+					<option>Eritrea</option>
+					<option>Estonia</option>
+					<option>Ethiopia</option>
+					<option>Falkland Islands</option>
+					<option>Faroe Islands</option>
+					<option>Federated States of Micronesia</option>
+					<option>Fiji</option>
+					<option>Finland</option>
+					<option>France</option>
+					<option>French Guiana</option>
+					<option>French Polynesia</option>
+					<option>French Southern Lands</option>
+					<option>Gabon</option>
+					<option>Gambia</option>
+					<option>Georgia</option>
+					<option>Germany</option>
+					<option>Ghana</option>
+					<option>Gibraltar</option>
+					<option>Greece</option>
+					<option>Greenland</option>
+					<option>Grenada</option>
+					<option>Guadeloupe</option>
+					<option>Guam</option>
+					<option>Guatemala</option>
+					<option>Guernsey</option>
+					<option>Guinea</option>
+					<option>Guinea-Bissau</option>
+					<option>Guyana</option>
+					<option>Haiti</option>
+					<option>Heard and McDonald Islands</option>
+					<option>Honduras</option>
+					<option>Hong Kong</option>
+					<option>Hungary</option>
+					<option>Iceland</option>
+					<option>India</option>
+					<option>Indonesia</option>
+					<option>Iraq</option>
+					<option>Ireland</option>
+					<option>Isle of Man</option>
+					<option>Israel</option>
+					<option>Italy</option>
+					<option>Jamaica</option>
+					<option>Japan</option>
+					<option>Jersey</option>
+					<option>Jordan</option>
+					<option>Kazakhstan</option>
+					<option>Kenya</option>
+					<option>Kiribati</option>
+					<option>Kuwait</option>
+					<option>Kyrgyzstan</option>
+					<option>Laos</option>
+					<option>Latvia</option>
+					<option>Lebanon</option>
+					<option>Lesotho</option>
+					<option>Liberia</option>
+					<option>Libya</option>
+					<option>Liechtenstein</option>
+					<option>Lithuania</option>
+					<option>Luxembourg</option>
+					<option>Macau</option>
+					<option>Macedonia</option>
+					<option>Madagascar</option>
+					<option>Malawi</option>
+					<option>Malaysia</option>
+					<option>Maldives</option>
+					<option>Mali</option>
+					<option>Malta</option>
+					<option>Marshall Islands</option>
+					<option>Martinique</option>
+					<option>Mauritania</option>
+					<option>Mauritius</option>
+					<option>Mayotte</option>
+					<option>Mexico</option>
+					<option>Moldova</option>
+					<option>Monaco</option>
+					<option>Mongolia</option>
+					<option>Montenegro</option>
+					<option>Montserrat</option>
+					<option>Morocco</option>
+					<option>Mozambique</option>
+					<option>Namibia</option>
+					<option>Nauru</option>
+					<option>Nepal</option>
+					<option>Netherlands</option>
+					<option>New Caledonia</option>
+					<option>New Zealand</option>
+					<option>Nicaragua</option>
+					<option>Niger</option>
+					<option>Nigeria</option>
+					<option>Niue</option>
+					<option>Norfolk Island</option>
+					<option>Northern Mariana Islands</option>
+					<option>Norway</option>
+					<option>Oman</option>
+					<option>Pakistan</option>
+					<option>Palau</option>
+					<option>Panama</option>
+					<option>Papua New Guinea</option>
+					<option>Paraguay</option>
+					<option>Peru</option>
+					<option>Philippines</option>
+					<option>Pitcairn Islands</option>
+					<option>Poland</option>
+					<option>Portugal</option>
+					<option>Puerto Rico</option>
+					<option>Qatar</option>
+					<option>Réunion</option>
+					<option>Romania</option>
+					<option>Russia</option>
+					<option>Rwanda</option>
+					<option>Saint Barthélemy</option>
+					<option>Saint Helena</option>
+					<option>Saint Kitts and Nevis</option>
+					<option>Saint Lucia</option>
+					<option>Saint Martin</option>
+					<option>Saint Pierre and Miquelon</option>
+					<option>Saint Vincent</option>
+					<option>Samoa</option>
+					<option>San Marino</option>
+					<option>São Tomé and Príncipe</option>
+					<option>Saudi Arabia</option>
+					<option>Senegal</option>
+					<option>Serbia</option>
+					<option>Seychelles</option>
+					<option>Sierra Leone</option>
+					<option>Singapore</option>
+					<option>Sint Maarten</option>
+					<option>Slovakia</option>
+					<option>Slovenia</option>
+					<option>Solomon Islands</option>
+					<option>Somalia</option>
+					<option>South Africa</option>
+					<option>South Georgia</option>
+					<option>South Korea</option>
+					<option>Spain</option>
+					<option>Sri Lanka</option>
+					<option>Sudan</option>
+					<option>Suriname</option>
+					<option>Svalbard and Jan Mayen</option>
+					<option>Sweden</option>
+					<option>Swaziland</option>
+					<option>Switzerland</option>
+					<option>Syria</option>
+					<option>Taiwan</option>
+					<option>Tajikistan</option>
+					<option>Tanzania</option>
+					<option>Thailand</option>
+					<option>Togo</option>
+					<option>Tokelau</option>
+					<option>Tonga</option>
+					<option>Trinidad and Tobago</option>
+					<option>Tunisia</option>
+					<option>Turkey</option>
+					<option>Turkmenistan</option>
+					<option>Turks and Caicos Islands</option>
+					<option>Tuvalu</option>
+					<option>Uganda</option>
+					<option>Ukraine</option>
+					<option>United Arab Emirates</option>
+					<option>United Kingdom</option>
+					<option>United States</option>
+					<option>Uruguay</option>
+					<option>Uzbekistan</option>
+					<option>Vanuatu</option>
+					<option>Vatican City</option>
+					<option>Vietnam</option>
+					<option>Venezuela</option>
+					<option>Wallis and Futuna</option>
+					<option>Western Sahara</option>
+					<option>Yemen</option>
+					<option>Zambia</option>
+					<option>Zimbabwe</option>
+				</select> 
+			</td>
+		</tr>
+		<tr>
+			<td><b>State :</td></b>
+			<td> <select id="data_16" name="data_16" style="max-width : 450px;" class="form-control">
+					<option>Kashmir</option>
+					<option>Delhi</option>
+					<option>Maharashtra</option>
+					<option>MP</option>
+					<option>Kerla</option>
+					<option>Goa</option>
+					<option></option>
+				</select>
+			</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><b>Address :<span style="color: red;"> *</span></td></b>
+			<td><textarea id="data_18" false name="data_18" style="max-width : 450px;" rows="4" cols="30" class="form-control"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td><b>Passport Number :<span style="color: red;"> *</span></td></b>
+			<td> <input type="text" id="data_19" name="data_19" style="max-width : 450px;" class="form-control"/>
+			</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td ><b>Select Tour Package :<span style="color: red;"> *</span></td></b>
+			<td><select id="data_21" name="data_21" style="max-width : 450px;" onchange="packages();" class="form-control">
+					<option>Select Package</option>
+					<option>Tour Package 1</option>
+					<option>Tour Package 2</option>
+					<option>Tour Package 3</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><b>Question's ? :</td></b>
+			<td> <textarea id="data_22" false name="data_22" style="max-width : 450px;" rows="4"  cols="35" class="form-control"></textarea>
+			</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><b>Package Contains :</td></b>
+			<td><textarea id="data_23" false name="data_23" style="max-width : 450px;" rows="6" cols="35" class="form-control"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td><b>Will you be requiring <br/> any of the following? :</td>
+			<td><b>Special seating : </b>
+					<span><input type="radio" id="data_10_0" name="data_10" value="Yes"/> Yes</span>
+					<span><input type="radio" id="data_10_1" name="data_10" value="No"/> No</span><br/>
+			</td>
+			<td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><b>Handicapped accommodation :</b></td>
+			<td><span><input type="radio" id="data_12_0" name="data_12" value="Yes"/> Yes</span>
+				<span><input type="radio" id="data_12_1" name="data_12" value="No"/> No</span><br/>
+			</td>
+		</tr>
+		<tr>
+			<td><b>Questions / Comments :</b></td>
+			<td> <textarea id="data_14" false name="data_14" style="max-width : 450px;" rows="6" cols="35" class="form-control"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td colspan="5"><div style="margin-left:30%;">
+					<input name="skip_Submit" id="submit" value="Submit" type="submit" />&nbsp;
+					<input name="skip_Submit" id="submit" value="Reset" type="reset"/>
+				</div>
+			</td>
+		</tr>
+	</table>
+</form>
+</p>
+<script type="text/javascript">
+
+
+function packages()
+{
+  if(document.getElementById('data_21').value==='Tour Package 1')
+  {
+    document.getElementById('data_23').value="Package 1";
+  }
+  else if(document.getElementById('data_21').value==='Tour Package 2')
+  {
+    document.getElementById('data_23').value="Package 2";
+  }
+  else if(document.getElementById('data_21').value==='Tour Package 3')
+  {
+    document.getElementById('data_23').value="Package 3";
+  }
+  else
+  {
+    document.getElementById('data_23').value="Select Package";
+  }
+}
+function validateForm() {
+
+
+if (isEmpty(document.getElementById('data_3').value.trim())) {
+alert('First name is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_4').value.trim())) {
+alert('Last name is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_5').value.trim())) {
+alert('Email is required!');
+return false;
+}
+if (!validateEmail(document.getElementById('data_5').value.trim())) {
+alert('Email must be a valid email address!');
+return false;
+}
+if (isEmpty(document.getElementById('data_6').value.trim())) {
+alert('Phone is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_18').value.trim())) {
+alert('Address is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data19').value.trim())) {
+alert('Passport Number is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_25').value.trim())) {
+alert('Terms and Conditions is required!');
+return false;
+}
+return true;
+}
+function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+function validateEmail(email) {
+var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+return isEmpty(email) || re.test(email);
+}
+</script>
+</body>
+</html>
